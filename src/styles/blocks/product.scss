@@ -39,15 +39,45 @@
     width: max-content;
     padding-bottom: 4px;
     border-bottom: 1px solid transparent;
-    
+
     transition: border-color $transition-duration;
 
     &:hover {
       border-bottom: 1px solid $text-color-grey;
     }
+
+    &-title {
+      @extend %text-upper;
+      color: $text-color-grey;
+      margin: 0;
+    }
   }
 
   &__description {
     @extend %body-text;
+  }
+
+  &__order {
+    height: 32px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+
+    background-color: $bg-color;
+    border: none;
+    border-bottom: 1px solid transparent;
+
+    transition: border-color $transition-duration;
+
+    &:hover {
+      border-bottom: 1px solid $accent-orange-color;
+    }
+
+    &-link {
+      @extend %text-upper;
+    }
   }
 }

@@ -1,3 +1,5 @@
+@import './reset.scss';
+
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/extends";
@@ -10,7 +12,6 @@
 @import "./blocks/logo.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/menu.scss";
-@import "./blocks/button.scss";
 
 @import "./blocks/products.scss";
 @import "./blocks/product.scss";
