@@ -3,22 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="
+        A landing page of a craft bakery. It presents a variety of baked goods, information about the bakery and its customers, and a contact section for placing sweet product orders.
+      "
+    >
+    <meta
+      name="keywords"
+      content="
+        bakery, bakehouse, craft bakery, bakeshop, patisserie, cake bakery, pastry shop, confectionery, confectionery products, croissants, cakes, cookies, cupcakes, donuts, sweets, dessert, bakery website, craft bakery website
+      "
+    >
     <title>Creative Bakery</title>
     <link rel="icon" href="./images/icons/icon-cookie.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
+      rel="preload"
+      href="./styles/main.scss"
+      as="style"
     >
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__content">
         <div class="top-actions">
-          <a href="#" class="logo">
+          <a
+            href="#"
+            class="logo"
+            aria-label="Bakerlab logo"
+          >
             <img
               src="./images/icons/logo-bakerlab.svg"
               alt="Bakerlab logo"
@@ -32,6 +46,7 @@
                 <a
                   href="#products"
                   class="nav__link nav__link--header"
+                  aria-label="Products"
                 >
                   Products
                 </a>
@@ -41,6 +56,7 @@
                 <a
                   href="#about-us"
                   class="nav__link nav__link--header"
+                  aria-label="About Us"
                 >
                 About Us
                 </a>
@@ -50,6 +66,7 @@
                 <a
                   href="#blog"
                   class="nav__link nav__link--header"
+                  aria-label="Blog"
                 >
                   Blog
                 </a>
@@ -59,6 +76,7 @@
                 <a
                   href="#contact-us"
                   class="nav__link nav__link--contact-us"
+                  aria-label="Contact Us"
                 >
                   Contact us
                 </a>
@@ -69,6 +87,7 @@
           <a
             href="#menu"
             class="icon icon--menu"
+            aria-label="Menu"
           >
           </a>
         </div>
@@ -88,7 +107,10 @@
             >
 
             <div class="header__link">
-              <a href="#about-us" class="header__link-text">
+              <a
+                href="#about-us" class="header__link-text"
+                aria-label="Learn more"
+              >
                 Learn more
               </a>
             </div>
@@ -100,7 +122,11 @@
     <aside class="page__menu menu" id="menu">
       <div class="menu__content">
         <div class="top-actions">
-          <a href="#" class="logo">
+          <a
+            href="#"
+            class="logo"
+            aria-label="Bakerlab logo"
+          >
             <img
               src="./images/icons/logo-bakerlab.svg"
               alt="Bakerlab logo"
@@ -111,6 +137,7 @@
           <a
             href="#"
             class="icon icon--cross"
+            aria-label="Close the menu"
           >
           </a>
         </div>
@@ -121,6 +148,7 @@
               <a
                 href="#products"
                 class="nav__link"
+                aria-label="Our products"
               >
                 Products
               </a>
@@ -130,6 +158,7 @@
               <a
                 href="#about-us"
                 class="nav__link"
+                aria-label="About us"
               >
                 About Us
               </a>
@@ -139,6 +168,7 @@
               <a
                 href="#blog"
                 class="nav__link"
+                aria-label="Blog"
               >
                 Blog
               </a>
@@ -148,6 +178,7 @@
               <a
                 href="#contact-us"
                 class="nav__link nav__link--contact-us"
+                aria-label="Contact us"
               >
                 Contact us
               </a>
@@ -184,6 +215,7 @@
                 <a
                   href="#cakes"
                   class="product__category"
+                  aria-label="Cakes"
                 >
                   <h3 class="product__category-title">
                     Cakes
@@ -204,6 +236,7 @@
                 <a
                   href="#contact-us"
                   class="product__order-link"
+                  aria-label="Order"
                 >
                   Order
                 </a>
@@ -221,6 +254,7 @@
                 <a
                   href="#cakes"
                   class="product__category"
+                  aria-label="Cakes"
                 >
                   <h3 class="product__category-title">
                     Cakes
@@ -241,6 +275,7 @@
                 <a
                   href="#contact-us"
                   class="product__order-link"
+                  aria-label="Order"
                 >
                   Order
                 </a>
@@ -258,6 +293,7 @@
                 <a
                   href="#donuts"
                   class="product__category"
+                  aria-label="Donuts"
                 >
                   <h3 class="product__category-title">
                     Donuts
@@ -278,6 +314,7 @@
                 <a
                   href="#contact-us"
                   class="product__order-link"
+                  aria-label="Order"
                 >
                   Order
                 </a>
@@ -295,6 +332,7 @@
                 <a
                   href="#donuts"
                   class="product__category"
+                  aria-label="Donuts"
                 >
                   <h3 class="product__category-title">
                     Donuts
@@ -315,6 +353,7 @@
                 <a
                   href="#contact-us"
                   class="product__order-link"
+                  aria-label="Order"
                 >
                   Order
                 </a>
@@ -332,6 +371,7 @@
                 <a
                   href="#cakes"
                   class="product__category"
+                  aria-label="Cakes"
                 >
                   <h3 class="product__category-title">
                     Cakes
@@ -352,6 +392,7 @@
                 <a
                   href="#contact-us"
                   class="product__order-link"
+                  aria-label="Order"
                 >
                   Order
                 </a>
@@ -369,6 +410,7 @@
                 <a
                   href="#cookies"
                   class="product__category"
+                  aria-label="Cookies"
                 >
                   <h3 class="product__category-title">
                     Cookies
@@ -389,6 +431,7 @@
                 <a
                   href="#contact-us"
                   class="product__order-link"
+                  aria-label="Order"
                 >
                   Order
                 </a>
@@ -436,7 +479,11 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__menu">
-            <a href="#" class="logo footer__logo">
+            <a
+              href="#"
+              class="logo footer__logo"
+              aria-label="Bakerlab logo"
+            >
               <img
                 src="./images/icons/logo-white.svg"
                 alt="Bakerlab logo"
@@ -457,6 +504,7 @@
                   <a
                     href="#products"
                     class="nav__link nav__link--white"
+                    aria-label="Products"
                   >
                     Products
                   </a>
@@ -466,6 +514,7 @@
                   <a
                     href="#about-us"
                     class="nav__link nav__link--white"
+                    aria-label="About us"
                   >
                     About Us
                   </a>
@@ -475,6 +524,7 @@
                   <a
                     href="#blog"
                     class="nav__link nav__link--white"
+                    aria-label="Blog"
                   >
                     Blog
                   </a>
@@ -484,6 +534,7 @@
                   <a
                     href="#terms-and-privasy"
                     class="nav__link nav__link--white"
+                    aria-label="Terms & Privacy"
                   >
                     Terms & Privacy
                   </a>
@@ -505,8 +556,9 @@
 
                 <li class="nav__item">
                   <a
-                    href="tel:(629)555-0129"
+                    href="tel:6295550129"
                     class="nav__link nav__link--white"
+                    aria-label="(629) 555-0129"
                   >
                     (629) 555-0129
                   </a>
@@ -514,8 +566,9 @@
 
                 <li class="nav__item">
                   <a
-                    href="tel:(603)555-0123"
+                    href="tel:6035550123"
                     class="nav__link nav__link--white"
+                    aria-label="(603) 555-0123"
                   >
                     (603) 555-0123
                   </a>
@@ -523,8 +576,9 @@
 
                 <li class="nav__item">
                   <a
-                    href="tel:(704)555-0127"
+                    href="tel:7045550127"
                     class="nav__link nav__link--white"
+                    aria-label="(704) 555-0127"
                   >
                     (704) 555-0127
                   </a>
@@ -540,6 +594,7 @@
                   <a
                     href="mailto:bakerlab@example.com"
                     class="nav__link nav__link--white"
+                    aria-label="bakerlab@example.com"
                   >
                     bakerlab@example.com
                   </a>
@@ -559,6 +614,7 @@
                     icon--facebook
                     icon--soc-med
                   "
+                  aria-label="Our page on Facebook"
                 >
                 </a>
               </li>
@@ -574,6 +630,7 @@
                     icon--instagram
                     icon--soc-med
                   "
+                  aria-label="Our page on Instagram"
                 >
                 </a>
               </li>
@@ -589,6 +646,7 @@
                     icon--twitter
                     icon--soc-med
                   "
+                  aria-label="Our page on Twitter"
                 >
                 </a>
               </li>
@@ -603,6 +661,5 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/main.js"></script>
   </body>
 </html>
